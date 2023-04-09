@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BotCell" rowHeight="55" id="PJZ-nZ-QSo" customClass="BotCell" customModule="ChatBotMission_alone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="398" height="55"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PJZ-nZ-QSo" id="fjX-F0-gOy">
+                <rect key="frame" x="0.0" y="0.0" width="398" height="55"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="botimage" translatesAutoresizingMaskIntoConstraints="NO" id="lGg-gW-GN6">
+                        <rect key="frame" x="10" y="0.0" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="1nV-3A-aHx"/>
+                            <constraint firstAttribute="height" constant="50" id="zfV-QO-w8x"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bk-YQ-jLt" customClass="PadddingLabel" customModule="ChatBotMission_alone" customModuleProvider="target">
+                        <rect key="frame" x="80" y="5" width="41.333333333333343" height="45"/>
+                        <color key="backgroundColor" name="LabelBackgroundColor"/>
+                        <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="10" bottom="8" trailing="10"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="lGg-gW-GN6" firstAttribute="centerY" secondItem="fjX-F0-gOy" secondAttribute="centerY" id="GpE-SD-fJF"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="0bk-YQ-jLt" secondAttribute="trailing" constant="10" id="Iuv-K5-aJt"/>
+                    <constraint firstItem="0bk-YQ-jLt" firstAttribute="top" secondItem="fjX-F0-gOy" secondAttribute="top" constant="5" id="J9d-iT-hkc"/>
+                    <constraint firstItem="lGg-gW-GN6" firstAttribute="top" secondItem="fjX-F0-gOy" secondAttribute="top" id="Jbm-4r-TxY"/>
+                    <constraint firstAttribute="bottom" secondItem="0bk-YQ-jLt" secondAttribute="bottom" id="N2j-QW-DDz"/>
+                    <constraint firstItem="0bk-YQ-jLt" firstAttribute="leading" secondItem="lGg-gW-GN6" secondAttribute="trailing" constant="20" id="RDv-8b-quK"/>
+                    <constraint firstItem="lGg-gW-GN6" firstAttribute="leading" secondItem="fjX-F0-gOy" secondAttribute="leading" constant="10" id="elu-xA-nUh"/>
+                    <constraint firstAttribute="bottom" secondItem="lGg-gW-GN6" secondAttribute="bottom" id="h7C-3q-W7d"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="content" destination="0bk-YQ-jLt" id="LYE-fN-8II"/>
+            </connections>
+            <point key="canvasLocation" x="201.52671755725191" y="-87.676056338028175"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="botimage" width="50" height="50"/>
+        <namedColor name="LabelBackgroundColor">
+            <color red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
